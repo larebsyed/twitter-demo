@@ -1,46 +1,83 @@
-# Getting Started with Create React App
+# Twitter Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simplified front-end clone of Twitter built with React and styled with Tailwind CSS. It aims to demonstrate the basic functionalities of Twitter, such as tweeting and viewing tweets. This demo app works offline and uses PouchDB for local data storage, making it a great starting point for developers looking to understand how to build offline-first applications with React.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Tweeting**: Users can post new tweets.
+- **Feed**: Users can view a list of all tweets.
+- **Offline Support**: The app uses PouchDB to store data locally, allowing for offline functionality.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **PouchDB**: An open-source JavaScript database that allows you to store data locally.
+## Project Structure
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The `src` folder is organized into several directories, each serving a specific purpose in the project architecture:
 
-### `npm test`
+- **`components`**: This directory contains reusable UI components (e.g., Button, TweetCard) that can be used throughout the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **`contexts`**: Here, you'll find React Context files that are used to manage and distribute application state across the component tree without having to prop-drill.
 
-### `npm run build`
+- **`hooks`**: This folder includes custom React hooks that encapsulate reusable logic (e.g., useTweets to fetch and display tweets) to be shared across components.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **`layout`**: Contains components that define the overall layout of the application, such as headers, footers, and navigation bars, ensuring a consistent look and feel across different pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **`pages`**: This directory hosts the different pages of the application (e.g., HomePage, ProfilePage), each representing a unique screen/view.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **`utils`**: Utility functions and helpers (e.g., date formatting, PouchDB configurations) that are used across the application are stored here.
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To get a local copy up and running, follow these simple steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- npm
+```sh
+npm install npm@latest -g
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repo
+```sh
+git clone https://github.com/larebsyed/twitter-demo.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+3. Start the development server
+```sh
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After starting the development server, the app will be running on [http://localhost:3000](http://localhost:3000). You can start by posting a new tweet or browsing the feed of existing tweets.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Lareb Syed - lareb.khalil.syed@gmail.com
+
+Project Link: [https://github.com/larebsyed/twitter-demo](https://github.com/larebsyed/twitter-demo)
+
+---
+
