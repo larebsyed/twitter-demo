@@ -17,7 +17,7 @@ This project is a simplified front-end clone of Twitter built with React and sty
 
 The `src` folder is organized into several directories, each serving a specific purpose in the project architecture:
 
-- **`components`**: This directory contains reusable UI components (e.g., Button, TweetCard) that can be used throughout the application.
+- **`components`**: This directory contains reusable UI components (e.g., Hash, UserCard) that can be used throughout the application.
 
 - **`contexts`**: Here, you'll find React Context files that are used to manage and distribute application state across the component tree without having to prop-drill.
 
@@ -25,7 +25,7 @@ The `src` folder is organized into several directories, each serving a specific 
 
 - **`layout`**: Contains components that define the overall layout of the application, such as headers, footers, and navigation bars, ensuring a consistent look and feel across different pages.
 
-- **`pages`**: This directory hosts the different pages of the application (e.g., HomePage, ProfilePage), each representing a unique screen/view.
+- **`pages`**: This directory hosts the different pages of the application (e.g., Home, Profile), each representing a unique screen/view.
 
 - **`utils`**: Utility functions and helpers (e.g., date formatting, PouchDB configurations) that are used across the application are stored here.
 
